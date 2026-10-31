@@ -1,0 +1,10 @@
+{
+  "name": "Browser",
+  "description": "A sci-fi HUD styled web browser with tabs, private tabs, ad and tracker blocking, reader mode, downloads, bookmarks, history and more. Adaptive UI for phones and tablets.",
+  "version": "1.0.0",
+  "ageRating": "3+",
+  "type": "app",
+  "containsAds": false,
+  "category": "communication",
+  "author": "Mohammad Mahfuz Rahman"
+}
