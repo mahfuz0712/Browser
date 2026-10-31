@@ -18,3 +18,6 @@ Package `com.mux.android.browser` - Version `1.0.0`
 - Can be set as **default browser**; handles links and "Share > Browser"
 - Clear browsing data (history, cookies, cache, downloads), clear on exit
 
+## Build
+Open in Android Studio, or `gradle assembleDebug` (Gradle 8.9, JDK 17). CI: `.github/workflows/build.yml`.
+Updates are read from GitHub releases of `mahfuz0712/Browser` (edit `AppInfo.kt`).

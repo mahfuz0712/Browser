@@ -340,7 +340,7 @@ private fun queryDownloads(ctx: Context): Map<Long, DlInfo> {
             val iId = cur.getColumnIndex(DownloadManager.COLUMN_ID)
             val iSt = cur.getColumnIndex(DownloadManager.COLUMN_STATUS)
             val iTo = cur.getColumnIndex(DownloadManager.COLUMN_TOTAL_SIZE_BYTES)
-            val iSo = cur.getColumnIndex(DownloadManager.COLUMN_BYTES_SO_FAR)
+            val iSo = cur.getColumnIndex(DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR)
             val iMi = cur.getColumnIndex(DownloadManager.COLUMN_MEDIA_TYPE)
             while (cur.moveToNext()) {
                 out[cur.getLong(iId)] = DlInfo(cur.getInt(iSt), cur.getLong(iTo), cur.getLong(iSo), cur.getString(iMi))

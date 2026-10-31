@@ -438,7 +438,7 @@ object Tabs {
         s.mediaPlaybackRequiresUserGesture = true
         s.allowFileAccess = false
         s.allowContentAccess = true
-        s.blockNetworkImages = AppSettings.blockImages
+        s.blockNetworkImage = AppSettings.blockImages
         s.mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
         s.cacheMode = if (t.isPrivate) WebSettings.LOAD_NO_CACHE else WebSettings.LOAD_DEFAULT
         s.saveFormData = !t.isPrivate

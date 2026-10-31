@@ -28,7 +28,7 @@ object Downloader {
                     .setMimeType(if (mime.isNullOrBlank()) "application/octet-stream" else mime)
                     .addRequestHeader("User-Agent", ua)
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                    .setDestinationInExternalPublicDirectory(Environment.DIRECTORY_DOWNLOADS, name)
+                    .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, name)
                 CookieManager.getInstance().getCookie(url)?.let { if (it.isNotEmpty()) req.addRequestHeader("Cookie", it) }
                 if (!referer.isNullOrEmpty()) req.addRequestHeader("Referer", referer)
                 val dm = ctx.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
