@@ -1,7 +1,7 @@
 {
   "name": "Browser",
   "description": "A sci-fi HUD styled web browser with tabs, private tabs, ad and tracker blocking, reader mode, downloads, bookmarks, history and more. Adaptive UI for phones and tablets.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "ageRating": "3+",
   "type": "app",
   "containsAds": false,

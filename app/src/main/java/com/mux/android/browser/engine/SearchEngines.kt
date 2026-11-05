@@ -13,6 +13,7 @@ class Engine(val key: String, val name: String, val template: String, val sugges
 object SearchEngines {
     val all = listOf(
         Engine("google", "GOOGLE", "https://www.google.com/search?q=%s", "https://suggestqueries.google.com/complete/search?client=firefox&q=%s"),
+        Engine("deep", "DEEP", "https://deep-search-ttjq.onrender.com/?q=%s", null),
         Engine("ddg", "DUCKDUCKGO", "https://duckduckgo.com/?q=%s", "https://duckduckgo.com/ac/?type=list&q=%s"),
         Engine("bing", "BING", "https://www.bing.com/search?q=%s", "https://api.bing.com/osjson.aspx?query=%s"),
         Engine("brave", "BRAVE", "https://search.brave.com/search?q=%s", "https://search.brave.com/api/suggest?q=%s"),
